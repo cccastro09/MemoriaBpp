@@ -11,6 +11,7 @@ public class carta : MonoBehaviour
 
     [SerializeField]
     private GameObject Carta;
+           
 
     public void OnMouseDown()
     {
@@ -18,6 +19,7 @@ public class carta : MonoBehaviour
         {
             Carta.SetActive(false);
             controller.CardRevealed(this);
+           
         }
 
     }
@@ -34,7 +36,7 @@ public class carta : MonoBehaviour
     {
         _id = id;
         GetComponent<SpriteRenderer>().sprite = image;
-
+        
     }
 
     public void Unreveal () //funcion voltear

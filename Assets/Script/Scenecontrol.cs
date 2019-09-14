@@ -5,6 +5,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Scenecontrol : MonoBehaviour
 {
@@ -13,9 +15,15 @@ public class Scenecontrol : MonoBehaviour
     public const int griCols = 3;
     public const float offsetX = 3f;
     public const float offeseY = 3f;
+    
 
-    public AudioClip carta,tema1;
+    public AudioClip carta, tema1;
     AudioSource sonido;
+
+    //////copiar al siguiente nivel
+    public GameObject aux;
+    public SonidoFruta sss;    
+    //////
 
     [SerializeField]
     //private carta originalCard;
@@ -29,8 +37,15 @@ public class Scenecontrol : MonoBehaviour
 
     private void Start()
     {
+
+        /////coopiar al siguiente nivel
+        aux = GameObject.Find("Auxiliar");
+        sss = new SonidoFruta();
+        //////
+
         Vector3 startPos = originalCard.transform.position;
         int[] numbers = { 0, 0, 1, 1, 2, 2};
+        //randon del array
         numbers = ShuffleArray(numbers);
 
         for (int i = 0; i < griCols; i++)
@@ -97,8 +112,7 @@ public class Scenecontrol : MonoBehaviour
 
     public void CardRevealed(carta card)
     {
-        if
-        (_firstReveaLed == null)
+        if(_firstReveaLed == null)
         {
 
             if (_firstReveaLed = card)
@@ -106,15 +120,12 @@ public class Scenecontrol : MonoBehaviour
                 sonido.clip = carta;
                 sonido.Play();
 
-            };
-
-
-           
+            };          
 
         }
         else
         {
-
+           
             _sconReveaLed = card;
             StartCoroutine(CheckedMatch());
 
@@ -124,10 +135,24 @@ public class Scenecontrol : MonoBehaviour
     {
         if (_firstReveaLed.id == _sconReveaLed.id)
         {
+            ////// copiar al siguiente nivel sonido
+            string im = _sconReveaLed.GetComponent<SpriteRenderer>().sprite.ToString();
+            string[] et = im.Split(' ');
+            string n_fru = et[0];
+            //Debug.Log(n_fru);//para mostrar el nombre de la fruta
+            sss = aux.GetComponent<SonidoFruta>();
+            sss.nombrar_fruta(n_fru);
+            ///////
+
             _score++;
             scoreLabel.text = "Puntaje: " + _score;
             if (_score == 3)
+            {
+                //tiempo de espera para cambio de escena ----> copiar al siguiente nivel
+                yield return new WaitForSeconds(2.0f);
                 SceneManager.LoadScene("escena2");
+            }
+               
 
         }
         else
