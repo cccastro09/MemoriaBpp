@@ -19,7 +19,7 @@ public class irInsDos : MonoBehaviour
     void OnMouseDown()
     {
         //Debug.Log("click");
-        Application.LoadLevel("escena3");//paa cambiar de ecena revisar porque esta deprecado]\
+        Application.LoadLevel("irInstDos");//paa cambiar de ecena revisar porque esta deprecado]\
 
 
     }

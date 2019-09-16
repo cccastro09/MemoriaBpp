@@ -9,7 +9,7 @@ public class irNiveluno : MonoBehaviour
     void OnMouseDown()
     {
         //Debug.Log("click");
-        Application.LoadLevel("lobby");//paa cambiar de ecena revisar porque esta deprecado]\
+        Application.LoadLevel("SampleScene");//paa cambiar de ecena revisar porque esta deprecado]\
 
 
     }

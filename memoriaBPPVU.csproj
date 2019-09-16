@@ -609,6 +609,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\nivel dos\cartaDos.cs" />
     <Compile Include="Assets\Script\nivel dos\irInsDos.cs" />
+    <Compile Include="Assets\Script\nivel dos\irNivelDos.cs" />
     <Compile Include="Assets\Script\nivel dos\irNivelDosperder.cs" />
     <Compile Include="Assets\Script\nivel dos\jugardos.cs" />
     <Compile Include="Assets\Script\nivel dos\Scenecontrol2.cs" />
