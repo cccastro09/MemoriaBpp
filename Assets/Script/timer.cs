@@ -6,37 +6,40 @@ using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
-    Image timbeBar;
-    //public float maxTime = 5f;
-    public float maxTime;
-    float timeLeft;
-    public GameObject timeUpText;
 
-    private void Awake()
-    {
-        maxTime = 20f;
-    }
+    public Transform Carga;
+    public Transform TextIndicador;
+    public Transform TextCargar;
+
+    [SerializeField]
+    private float Cantidad;
+
+    [SerializeField]
+    private float Velocidad;
+
+
+    // Start is called before the first frame update
     void Start()
     {
-        timeUpText.SetActive(false);
-        timbeBar = GetComponent<Image>();
-        timeLeft = maxTime;
-
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if (timeLeft > 0)
+        if(Cantidad<200)
         {
-            timeLeft -= Time.deltaTime;
-            timbeBar.fillAmount = timeLeft / maxTime;
-            Time.timeScale = 1;
+            Cantidad += Velocidad * Time.deltaTime;
+            TextIndicador.GetComponent<Text>().text = ((int)Cantidad).ToString() + "";
+            TextCargar.gameObject.SetActive(true);
+        } else
+        {
+            TextCargar.gameObject.SetActive(false);
+            TextIndicador.GetComponent<Text>().text = "fin";
+            SceneManager.LoadScene("perder");
 
         }
-        else
-        {
-            timeUpText.SetActive(true);
-            Time.timeScale = 0;
-        }
+
+        Carga.GetComponent<Image>().fillAmount = Cantidad / 200;
     }
 }

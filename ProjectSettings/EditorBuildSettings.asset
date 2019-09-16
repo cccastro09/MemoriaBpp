@@ -33,9 +33,6 @@ EditorBuildSettings:
     path: Assets/Scenes/perderSegundoNivel.unity
     guid: 7551e6d82d67b4d40bba896d3aa973ee
   - enabled: 1
-    path: Assets/Scenes/TercerNivel.unity
-    guid: f63998064fbee5447927356e6771cedb
-  - enabled: 1
     path: Assets/Scenes/ganarTercerNivel.unity
     guid: 0fff8288413250244be60a2a6970cc6a
   - enabled: 1

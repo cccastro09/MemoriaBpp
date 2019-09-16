@@ -62,30 +62,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\nivel dos\cartaDos.cs" />
-    <Compile Include="Assets\Script\nivel dos\irInsDos.cs" />
-    <Compile Include="Assets\Script\nivel dos\irNivelDos.cs" />
-    <Compile Include="Assets\Script\nivel dos\irNivelDosperder.cs" />
-    <Compile Include="Assets\Script\nivel dos\jugardos.cs" />
-    <Compile Include="Assets\Script\nivel dos\Scenecontrol2.cs" />
-    <Compile Include="Assets\Script\nivel dos\SonidoFrutaDos.cs" />
-    <Compile Include="Assets\Script\nivel dos\timerDos.cs" />
-    <Compile Include="Assets\Script\nivel tres\cartaTres.cs" />
-    <Compile Include="Assets\Script\nivel tres\irTercerNivel.cs" />
-    <Compile Include="Assets\Script\nivel tres\jugartres.cs" />
-    <Compile Include="Assets\Script\nivel tres\Scenecontrol3.cs" />
-    <Compile Include="Assets\Script\nivel tres\SonidoFrutaTres.cs" />
-    <Compile Include="Assets\Script\nivel uno\carta.cs" />
-    <Compile Include="Assets\Script\nivel uno\instruccion.cs" />
-    <Compile Include="Assets\Script\nivel uno\irInstruccion.cs" />
-    <Compile Include="Assets\Script\nivel uno\irLobby.cs" />
-    <Compile Include="Assets\Script\nivel uno\irNiveluno.cs" />
-    <Compile Include="Assets\Script\nivel uno\irNivelUnoPerder.cs" />
-    <Compile Include="Assets\Script\nivel uno\jugaruno.cs" />
-    <Compile Include="Assets\Script\nivel uno\nivel.cs" />
-    <Compile Include="Assets\Script\nivel uno\Scenecontrol.cs" />
-    <Compile Include="Assets\Script\nivel uno\SonidoFruta.cs" />
-    <Compile Include="Assets\Script\nivel uno\timer.cs" />
+    <Compile Include="Assets\Script\carta.cs" />
+    <Compile Include="Assets\Script\cartaDos.cs" />
+    <Compile Include="Assets\Script\cartaTres.cs" />
+    <Compile Include="Assets\Script\instruccion.cs" />
+    <Compile Include="Assets\Script\irInsDos.cs" />
+    <Compile Include="Assets\Script\irInstruccion.cs" />
+    <Compile Include="Assets\Script\irLobby.cs" />
+    <Compile Include="Assets\Script\irNivelDos.cs" />
+    <Compile Include="Assets\Script\irNivelDosperder.cs" />
+    <Compile Include="Assets\Script\irNiveluno.cs" />
+    <Compile Include="Assets\Script\irNivelUnoPerder.cs" />
+    <Compile Include="Assets\Script\jugardos.cs" />
+    <Compile Include="Assets\Script\jugaruno.cs" />
+    <Compile Include="Assets\Script\nivel.cs" />
+    <Compile Include="Assets\Script\Scenecontrol.cs" />
+    <Compile Include="Assets\Script\Scenecontrol2.cs" />
+    <Compile Include="Assets\Script\SceneControl3.cs" />
+    <Compile Include="Assets\Script\SonidoFruta.cs" />
+    <Compile Include="Assets\Script\SonidoFrutaDos.cs" />
+    <Compile Include="Assets\Script\timer.cs" />
+    <Compile Include="Assets\Script\timerDos.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Christian Castro -C4/Desktop/New folder/New folder/memoriaBPPVU/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

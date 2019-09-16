@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Scenecontrol2 : MonoBehaviour
 {
@@ -13,6 +15,11 @@ public class Scenecontrol2 : MonoBehaviour
 
     public AudioClip carta, tema1;
     AudioSource sonido;
+
+    //////copiar al siguiente nivel
+    public GameObject aux;
+    public SonidoFrutaDos sss;
+    //////
 
     [SerializeField]
     //private carta originalCard;
@@ -26,8 +33,16 @@ public class Scenecontrol2 : MonoBehaviour
 
     private void Start()
     {
+
+        /////copiar al siguiente nivel
+        aux = GameObject.Find("Auxiliar");
+        sss = new SonidoFrutaDos();
+        /////
+
+
         Vector3 startPos = originalCard.transform.position;
         int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3};
+        //randon del array
         numbers = ShuffleArray(numbers);
 
         for (int i = 0; i < griCols; i++)
@@ -121,10 +136,26 @@ public class Scenecontrol2 : MonoBehaviour
     {
         if (_firstReveaLed.id == _sconReveaLed.id)
         {
+
+            ////// copiar al siguiente nivel sonido
+            string im = _sconReveaLed.GetComponent<SpriteRenderer>().sprite.ToString();
+            string[] et = im.Split(' ');
+            string n_fru = et[0];
+            //Debug.Log(n_fru);//para mostrar el nombre de la fruta
+            sss = aux.GetComponent<SonidoFrutaDos>();
+            sss.nombrar_fruta(n_fru);
+            ///////
+
+
+
             _score++;
             scoreLabel.text = "Puntaje: " + _score;
             if (_score == 4)
-                SceneManager.LoadScene("escena2");
+            {
+                //tiempo de espera para cambio de escena ----> copiar al siguiente nivel
+                yield return new WaitForSeconds(2.0f);
+                SceneManager.LoadScene("ganarSegundoNivel");
+            }
 
         }
         else

@@ -846,8 +846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8dc23c74b6c3124e8a1c7d6f7b72eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruta: {fileID: 0}
-  sonidofruta: {fileID: 0}
 --- !u!1 &663503644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,10 +1030,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 873863221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36bfbe5cceabeee48a17d569d9fc12a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7922cd7c7c670e048840e412bb9b5d95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1221201046}
   CartaTres: {fileID: 372065692}
 --- !u!61 &873863225
 BoxCollider2D:
@@ -1390,20 +1387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dcfb71320c40e14e91b2e82b2f50e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carta: {fileID: 0}
-  tema1: {fileID: 0}
-  aux: {fileID: 0}
-  sss: {fileID: 0}
-  originalCard: {fileID: 873863224}
-  images:
-  - {fileID: 21300000, guid: eb0e0f6e9d24b014caf37792585b9bca, type: 3}
-  - {fileID: 21300000, guid: b9733dc5c1b221b4c9faa99cb930417a, type: 3}
-  - {fileID: 21300000, guid: 83cb6b17732247543a8624102729843a, type: 3}
-  - {fileID: 21300000, guid: 2bf07de4c56bfdd4f9872a620ac9d362, type: 3}
-  - {fileID: 21300000, guid: f1c4104584a0e9e40af8302c90293e0c, type: 3}
-  - {fileID: 21300000, guid: 7e61d65f54c2d4e4ebe9ff1935e386ef, type: 3}
-  score: 0
-  scoreLabel: {fileID: 0}
 --- !u!1 &1251538496
 GameObject:
   m_ObjectHideFlags: 0

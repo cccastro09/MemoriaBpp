@@ -38,7 +38,7 @@ public class Scenecontrol : MonoBehaviour
     private void Start()
     {
 
-        /////coopiar al siguiente nivel
+        /////copiar al siguiente nivel
         aux = GameObject.Find("Auxiliar");
         sss = new SonidoFruta();
         //////
@@ -150,7 +150,7 @@ public class Scenecontrol : MonoBehaviour
             {
                 //tiempo de espera para cambio de escena ----> copiar al siguiente nivel
                 yield return new WaitForSeconds(2.0f);
-                SceneManager.LoadScene("escena2");
+                SceneManager.LoadScene("ganar");
             }
                
 
