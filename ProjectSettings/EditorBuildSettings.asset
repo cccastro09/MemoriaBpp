@@ -12,15 +12,30 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/instruccion.unity
-    guid: 825617b34a9bd534892712cbf67c8ed9
-  - enabled: 1
-    path: Assets/Scenes/escena2.unity
+    path: Assets/Scenes/ganar.unity
     guid: 728f8391760dfa6488826c44c4a76636
   - enabled: 1
     path: Assets/Scenes/SegundoNivel.unity
     guid: 0bb7705360c6e8541b9cce408fa08fcc
   - enabled: 1
-    path: Assets/Scenes/escena3.unity
+    path: Assets/Scenes/instruccion.unity
+    guid: 825617b34a9bd534892712cbf67c8ed9
+  - enabled: 1
+    path: Assets/Scenes/perder.unity
     guid: 751ae8344f5bbfa409d6d4f85db51f81
+  - enabled: 1
+    path: Assets/Scenes/ganarSegundoNivel.unity
+    guid: dd694ec9c9a5f854b89cd62553880b1c
+  - enabled: 1
+    path: Assets/Scenes/perderSegundoNivel.unity
+    guid: 7551e6d82d67b4d40bba896d3aa973ee
+  - enabled: 1
+    path: Assets/Scenes/TercerNivel.unity
+    guid: f63998064fbee5447927356e6771cedb
+  - enabled: 1
+    path: Assets/Scenes/ganarTercerNivel.unity
+    guid: 0fff8288413250244be60a2a6970cc6a
+  - enabled: 1
+    path: Assets/Scenes/perderTercerNivel.unity
+    guid: 085a03a0822f6f149a35e9932ec24741
   m_configObjects: {}
