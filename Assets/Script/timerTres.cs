@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class timerDos : MonoBehaviour
-{
 
+public class timerTres : MonoBehaviour
+{
     public Transform Carga;
     public Transform TextIndicador;
     public Transform TextCargar;
@@ -15,7 +15,7 @@ public class timerDos : MonoBehaviour
     private float Cantidad = 0;
 
     [SerializeField]
-    private float Velocidad=0;
+    private float Velocidad = 0;
 
 
     // Start is called before the first frame update
@@ -27,7 +27,7 @@ public class timerDos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Cantidad < 400)
+        if (Cantidad < 500)
         {
             Cantidad += Velocidad * Time.deltaTime;
             TextIndicador.GetComponent<Text>().text = ((int)Cantidad).ToString() + "";
@@ -37,10 +37,11 @@ public class timerDos : MonoBehaviour
         {
             TextCargar.gameObject.SetActive(false);
             TextIndicador.GetComponent<Text>().text = "fin";
-            SceneManager.LoadScene("perderSegundoNivel");
+            SceneManager.LoadScene("perderTercerNivel");
 
         }
 
-        Carga.GetComponent<Image>().fillAmount = Cantidad / 400;
+        Carga.GetComponent<Image>().fillAmount = Cantidad / 500;
     }
 }
+

@@ -86,6 +86,7 @@
     <Compile Include="Assets\Script\SonidoFrutaTres.cs" />
     <Compile Include="Assets\Script\timer.cs" />
     <Compile Include="Assets\Script\timerDos.cs" />
+    <Compile Include="Assets\Script\timerTres.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Christian Castro -C4/Desktop/New folder/New folder/memoriaBPPVU/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

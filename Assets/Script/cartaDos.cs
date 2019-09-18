@@ -10,7 +10,7 @@ public class cartaDos : MonoBehaviour
     private Scenecontrol2 controller;
 
     [SerializeField]
-    private GameObject CartaDos;
+    private GameObject CartaDos = null;
 
     public void OnMouseDown()
     {

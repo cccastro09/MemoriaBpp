@@ -7,10 +7,10 @@ public class carta : MonoBehaviour
 
 {
     [SerializeField]
-    private Scenecontrol controller;
+    private Scenecontrol controller = null;
 
     [SerializeField]
-    private GameObject Carta;
+    private GameObject Carta = null;
            
 
     public void OnMouseDown()
