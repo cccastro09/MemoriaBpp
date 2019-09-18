@@ -19,7 +19,7 @@ public class irInstruccion : MonoBehaviour
     void OnMouseDown()
     {
         //Debug.Log("click");
-        Application.LoadLevel("instruccion");//paa cambiar de ecena revisar porque esta deprecado]\
+        Application.LoadLevel("irInstDos");//paa cambiar de ecena revisar porque esta deprecado]\
 
 
     }
