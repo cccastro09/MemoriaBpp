@@ -12,10 +12,10 @@ public class timer : MonoBehaviour
     public Transform TextCargar;
 
     [SerializeField]
-    private float Cantidad;
+    private float Cantidad = 0;
 
     [SerializeField]
-    private float Velocidad;
+    private float Velocidad = 0;
 
 
     // Start is called before the first frame update

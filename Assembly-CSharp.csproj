@@ -71,9 +71,11 @@
     <Compile Include="Assets\Script\irInstruccion.cs" />
     <Compile Include="Assets\Script\irLobby.cs" />
     <Compile Include="Assets\Script\irNivelDos.cs" />
+    <Compile Include="Assets\Script\irNivelTres.cs" />
     <Compile Include="Assets\Script\irNiveluno.cs" />
     <Compile Include="Assets\Script\irNivelUnoPerder.cs" />
     <Compile Include="Assets\Script\jugardos.cs" />
+    <Compile Include="Assets\Script\jugartres.cs" />
     <Compile Include="Assets\Script\jugaruno.cs" />
     <Compile Include="Assets\Script\nivel.cs" />
     <Compile Include="Assets\Script\Scenecontrol.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Assets\Script\SceneControl3.cs" />
     <Compile Include="Assets\Script\SonidoFruta.cs" />
     <Compile Include="Assets\Script\SonidoFrutaDos.cs" />
+    <Compile Include="Assets\Script\SonidoFrutaTres.cs" />
     <Compile Include="Assets\Script\timer.cs" />
     <Compile Include="Assets\Script\timerDos.cs" />
     <Reference Include="Unity.Timeline.Editor">

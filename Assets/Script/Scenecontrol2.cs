@@ -99,7 +99,7 @@ public class Scenecontrol2 : MonoBehaviour
     private int _score = 0;
 
     [SerializeField]
-    private TextMesh scoreLabel;
+    private TextMesh scoreLabel ;
 
     public bool canReveal
     {
