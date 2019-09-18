@@ -10,8 +10,8 @@ public class SceneControl3 : MonoBehaviour
 
     public const int griRows = 2;
     public const int griCols = 6;
-    public const float offsetX = 3f;
-    public const float offeseY = 3f;
+    public const float offsetX = 2.5f;
+    public const float offeseY = 2.5f;
 
     public AudioClip carta;
     AudioSource sonido;

@@ -1155,6 +1155,7 @@ GameObject:
   - component: {fileID: 873863225}
   - component: {fileID: 873863224}
   - component: {fileID: 873863226}
+  - component: {fileID: 873863227}
   m_Layer: 0
   m_Name: carta
   m_TagString: Untagged
@@ -1361,6 +1362,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &873863227
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873863221}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af7f40a5e3ceefd4a9a09aa491ed2a1b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1051586230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,7 +1739,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carta: {fileID: 0}
-  tema1: {fileID: 0}
   aux: {fileID: 0}
   sss: {fileID: 0}
   originalCard: {fileID: 873863224}
