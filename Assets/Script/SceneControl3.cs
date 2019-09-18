@@ -7,14 +7,14 @@ using UnityEngine.UI;
 
 public class SceneControl3 : MonoBehaviour
 {
+
     public const int griRows = 2;
     public const int griCols = 6;
-    public const float offsetX = 2.5f;
-    public const float offeseY = 2.5f;
+    public const float offsetX = 3f;
+    public const float offeseY = 3f;
 
     public AudioClip carta, tema1;
     AudioSource sonido;
-
 
     //////copiar al siguiente nivel
     public GameObject aux;
@@ -22,10 +22,12 @@ public class SceneControl3 : MonoBehaviour
     //////
 
     [SerializeField]
+    //private carta originalCard;
     public cartaTres originalCard;
-
     [SerializeField]
+    //private Sprite[] images;
     public Sprite[] images;
+
 
     public int score = 0;
 
@@ -37,9 +39,10 @@ public class SceneControl3 : MonoBehaviour
         sss = new SonidoFrutaTres();
         /////
 
-        Vector3 startPos = originalCard.transform.position;
-        int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5};
 
+        Vector3 startPos = originalCard.transform.position;
+        int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 };
+        //randon del array
         numbers = ShuffleArray(numbers);
 
         for (int i = 0; i < griCols; i++)
@@ -54,7 +57,9 @@ public class SceneControl3 : MonoBehaviour
                 }
                 else
                 {
+
                     card = Instantiate(originalCard) as cartaTres;
+
                 }
 
                 int index = j * griCols + i;
@@ -66,15 +71,17 @@ public class SceneControl3 : MonoBehaviour
 
                 card.transform.position = new Vector3(posX, posY, startPos.z);
             }
+
         }
+
     }
 
-
-    private int[] ShuffleArray (int[] numbers)
+    private int[] ShuffleArray(int[] numbers)
     {
         int[] newArray = numbers.Clone() as int[];
-        for (int i = 0; i <newArray.Length; i++)
+        for (int i = 0; i < newArray.Length; i++)
         {
+
             int tmp = newArray[i];
             int r = Random.Range(i, newArray.Length);
             newArray[i] = newArray[r];
@@ -83,39 +90,52 @@ public class SceneControl3 : MonoBehaviour
         }
 
         return newArray;
-    }
 
+    }
 
     private cartaTres _firstReveaLed;
     private cartaTres _sconReveaLed;
 
     private int _score = 0;
+
     [SerializeField]
     private TextMesh scoreLabel = null;
 
     public bool canReveal
     {
-        get { return _sconReveaLed = null;  }
+        get { return _sconReveaLed = null; }
+
     }
 
-    public void CardRevealed (cartaTres card)
+    public void CardRevealed(cartaTres card)
     {
         if
-            (_firstReveaLed == null)
+        (_firstReveaLed == null)
         {
-            _firstReveaLed = card;
+
+            if (_firstReveaLed = card)
+            {
+                //  sonido.clip = carta;
+                //  sonido.Play();
+
+            };
+
+
+
+
         }
         else
         {
+
             _sconReveaLed = card;
             StartCoroutine(CheckedMatch());
+
         }
     }
-
     private IEnumerator CheckedMatch()
+    {
+        if (_firstReveaLed.id == _sconReveaLed.id)
         {
-            if (_sconReveaLed.id == _sconReveaLed.id)
-            {
 
             ////// copiar al siguiente nivel sonido
             string im = _sconReveaLed.GetComponent<SpriteRenderer>().sprite.ToString();
@@ -127,6 +147,7 @@ public class SceneControl3 : MonoBehaviour
             ///////
 
 
+
             _score++;
             scoreLabel.text = "Puntaje: " + _score;
             if (_score == 6)
@@ -136,24 +157,26 @@ public class SceneControl3 : MonoBehaviour
                 SceneManager.LoadScene("ganarTercerNivel");
             }
 
-
-
         }
-            else
-            {
-                yield return new WaitForSeconds(0.5f);
-                _firstReveaLed.Unreveal();
-                _sconReveaLed.Unreveal();
+        else
+        {
 
-            }
+            yield return new WaitForSeconds(0.5f); //tiempo que espera voltear carta cuando esta mal
 
+            Debug.Log(_firstReveaLed.id);
 
-            _firstReveaLed = null;
-            _sconReveaLed = null;
-
+            _firstReveaLed.Unreveal();
+            _sconReveaLed.Unreveal();
         }
 
-        void cardCoparion(List<int> c) { }
-    
- }
+        _firstReveaLed = null;
+        _sconReveaLed = null;
 
+    }
+
+    void cardCoparion(List<int> c)
+    {
+
+    }
+
+}

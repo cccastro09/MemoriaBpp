@@ -7,7 +7,7 @@ public class cartaDos : MonoBehaviour
 
 {
     [SerializeField]
-    private Scenecontrol2 controller;
+    private Scenecontrol2 controller = null;
 
     [SerializeField]
     private GameObject CartaDos = null;
