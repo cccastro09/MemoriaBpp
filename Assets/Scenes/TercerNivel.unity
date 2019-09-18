@@ -1008,8 +1008,8 @@ GameObject:
   - component: {fileID: 873863223}
   - component: {fileID: 873863222}
   - component: {fileID: 873863225}
-  - component: {fileID: 873863226}
   - component: {fileID: 873863224}
+  - component: {fileID: 873863226}
   m_Layer: 0
   m_Name: carta
   m_TagString: Untagged

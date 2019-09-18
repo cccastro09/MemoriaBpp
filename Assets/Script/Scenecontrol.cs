@@ -1,7 +1,4 @@
-﻿
-
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,7 +13,6 @@ public class Scenecontrol : MonoBehaviour
     public const float offsetX = 3f;
     public const float offeseY = 3f;
     
-
     public AudioClip carta, tema1;
     AudioSource sonido;
 
