@@ -712,6 +712,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -1556,4 +1558,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ganarTercerNivel.unity
   - Assets/Scenes/perderTercerNivel.unity
   - Assets/Scenes/irInsTres.unity
-  playerPath: C:/Users/Christian Castro -C4/Desktop/apk new/andoid/memoriaBPPv19.apk
+  playerPath: C:/Users/Christian Castro -C4/Desktop/apk new/andoid/memoriaBPPv21.apk
