@@ -13,7 +13,7 @@ public class SceneControl3 : MonoBehaviour
     public const float offsetX = 3f;
     public const float offeseY = 3f;
 
-    public AudioClip carta, tema1;
+    public AudioClip carta;
     AudioSource sonido;
 
     //////copiar al siguiente nivel
@@ -41,7 +41,7 @@ public class SceneControl3 : MonoBehaviour
 
 
         Vector3 startPos = originalCard.transform.position;
-        int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 };
+        int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4,5, 5};
         //randon del array
         numbers = ShuffleArray(numbers);
 
@@ -163,7 +163,7 @@ public class SceneControl3 : MonoBehaviour
 
             yield return new WaitForSeconds(0.5f); //tiempo que espera voltear carta cuando esta mal
 
-            Debug.Log(_firstReveaLed.id);
+           // Debug.Log(_firstReveaLed.id);
 
             _firstReveaLed.Unreveal();
             _sconReveaLed.Unreveal();

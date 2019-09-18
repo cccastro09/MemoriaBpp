@@ -13,7 +13,7 @@ public class Scenecontrol2 : MonoBehaviour
     public const float offsetX = 3f;
     public const float offeseY = 3f;
 
-    public AudioClip carta, tema1;
+    public AudioClip carta;
     AudioSource sonido;
 
     //////copiar al siguiente nivel
