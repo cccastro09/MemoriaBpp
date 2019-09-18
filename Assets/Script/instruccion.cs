@@ -18,7 +18,7 @@ public class instruccion : MonoBehaviour
     void OnMouseDown()
     {
         //Debug.Log("click");
-        Application.LoadLevel("SampleScene");//paa cambiar de ecena revisar porque esta deprecado]\
+        Application.LoadLevel("instruccion");//paa cambiar de ecena revisar porque esta deprecado]\
 
 
     }

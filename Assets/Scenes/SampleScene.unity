@@ -1181,7 +1181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carta: {fileID: 0}
-  tema1: {fileID: 0}
   aux: {fileID: 0}
   sss: {fileID: 0}
   originalCard: {fileID: 560376253}
@@ -1549,7 +1548,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1277746090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adde920c24623a544b55fa9630ae4ef7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c0c6dc8a5aeaf04d9c921494be44720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &1277746094

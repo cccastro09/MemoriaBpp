@@ -27,7 +27,7 @@ public class timerTres : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Cantidad < 500)
+        if (Cantidad < 400)
         {
             Cantidad += Velocidad * Time.deltaTime;
             TextIndicador.GetComponent<Text>().text = ((int)Cantidad).ToString() + "";
@@ -41,7 +41,7 @@ public class timerTres : MonoBehaviour
 
         }
 
-        Carga.GetComponent<Image>().fillAmount = Cantidad / 500;
+        Carga.GetComponent<Image>().fillAmount = Cantidad / 400;
     }
 }
 

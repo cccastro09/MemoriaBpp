@@ -704,8 +704,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2010160026}
   - component: {fileID: 2010160025}
-  - component: {fileID: 2010160027}
   - component: {fileID: 2010160028}
+  - component: {fileID: 2010160027}
   m_Layer: 0
   m_Name: flecha
   m_TagString: Untagged
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2010160024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fab549047adbde1458b156e80210c088, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ae776a4cbdbfc248ae9e56b213f5c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &2010160028
