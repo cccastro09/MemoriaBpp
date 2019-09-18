@@ -6,13 +6,6 @@
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
-/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.dll
-/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
-/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -71,9 +64,14 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/Managed/UnityEditor.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/Managed/Unity.Locator.dll"
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
-/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
-/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
 /reference:"C:/Users/Christian Castro -C4/Desktop/New folder/New folder/memoriaBPPVU/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll"
 /reference:"C:/Users/Christian Castro -C4/Desktop/New folder/New folder/memoriaBPPVU/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll"
 /reference:"C:/Users/Christian Castro -C4/Desktop/New folder/New folder/memoriaBPPVU/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll"
@@ -297,26 +295,24 @@
 /define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"Assets\Script\nivel dos\cartaDos.cs"
-"Assets\Script\nivel dos\irInsDos.cs"
-"Assets\Script\nivel dos\irNivelDosperder.cs"
-"Assets\Script\nivel dos\jugardos.cs"
-"Assets\Script\nivel dos\Scenecontrol2.cs"
-"Assets\Script\nivel dos\SonidoFrutaDos.cs"
-"Assets\Script\nivel dos\timerDos.cs"
-"Assets\Script\nivel tres\cartaTres.cs"
-"Assets\Script\nivel tres\irTercerNivel.cs"
-"Assets\Script\nivel tres\jugartres.cs"
-"Assets\Script\nivel tres\Scenecontrol3.cs"
-"Assets\Script\nivel tres\SonidoFrutaTres.cs"
-"Assets\Script\nivel uno\carta.cs"
-"Assets\Script\nivel uno\instruccion.cs"
-"Assets\Script\nivel uno\irInstruccion.cs"
-"Assets\Script\nivel uno\irLobby.cs"
-"Assets\Script\nivel uno\irNiveluno.cs"
-"Assets\Script\nivel uno\irNivelUnoPerder.cs"
-"Assets\Script\nivel uno\jugaruno.cs"
-"Assets\Script\nivel uno\nivel.cs"
-"Assets\Script\nivel uno\Scenecontrol.cs"
-"Assets\Script\nivel uno\SonidoFruta.cs"
-"Assets\Script\nivel uno\timer.cs"
+Assets\Script\carta.cs
+Assets\Script\cartaDos.cs
+Assets\Script\cartaTres.cs
+Assets\Script\dosperder.cs
+Assets\Script\instruccion.cs
+Assets\Script\irInsDos.cs
+Assets\Script\irInstruccion.cs
+Assets\Script\irLobby.cs
+Assets\Script\irNivelDos.cs
+Assets\Script\irNiveluno.cs
+Assets\Script\irNivelUnoPerder.cs
+Assets\Script\jugardos.cs
+Assets\Script\jugaruno.cs
+Assets\Script\nivel.cs
+Assets\Script\Scenecontrol.cs
+Assets\Script\Scenecontrol2.cs
+Assets\Script\SceneControl3.cs
+Assets\Script\SonidoFruta.cs
+Assets\Script\SonidoFrutaDos.cs
+Assets\Script\timer.cs
+Assets\Script\timerDos.cs

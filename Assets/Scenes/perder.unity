@@ -554,6 +554,7 @@ GameObject:
   - component: {fileID: 2124138330}
   - component: {fileID: 2124138329}
   - component: {fileID: 2124138328}
+  - component: {fileID: 2124138331}
   m_Layer: 0
   m_Name: regresar
   m_TagString: Untagged
@@ -635,6 +636,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2124138331
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124138327}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.1
 --- !u!1 &2126257355
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,8 +662,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2126257357}
   - component: {fileID: 2126257356}
-  - component: {fileID: 2126257358}
   - component: {fileID: 2126257359}
+  - component: {fileID: 2126257358}
   m_Layer: 0
   m_Name: flecha
   m_TagString: Untagged
@@ -716,32 +733,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2126257358
-BoxCollider2D:
+--- !u!65 &2126257358
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126257355}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.14, y: 3.49}
-    newSize: {x: 6.14, y: 3.49}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.14, y: 3.49}
-  m_EdgeRadius: 0
+  m_Size: {x: 6.14, y: 3.49, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2126257359
 MonoBehaviour:
   m_ObjectHideFlags: 0

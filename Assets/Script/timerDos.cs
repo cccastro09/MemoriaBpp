@@ -27,7 +27,7 @@ public class timerDos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Cantidad < 300)
+        if (Cantidad < 500)
         {
             Cantidad += Velocidad * Time.deltaTime;
             TextIndicador.GetComponent<Text>().text = ((int)Cantidad).ToString() + "";
@@ -37,10 +37,10 @@ public class timerDos : MonoBehaviour
         {
             TextCargar.gameObject.SetActive(false);
             TextIndicador.GetComponent<Text>().text = "fin";
-            SceneManager.LoadScene("perder");
+            SceneManager.LoadScene("perderSegundoNivel");
 
         }
 
-        Carga.GetComponent<Image>().fillAmount = Cantidad / 300;
+        Carga.GetComponent<Image>().fillAmount = Cantidad / 500;
     }
 }

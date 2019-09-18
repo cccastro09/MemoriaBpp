@@ -65,12 +65,12 @@
     <Compile Include="Assets\Script\carta.cs" />
     <Compile Include="Assets\Script\cartaDos.cs" />
     <Compile Include="Assets\Script\cartaTres.cs" />
+    <Compile Include="Assets\Script\dosperder.cs" />
     <Compile Include="Assets\Script\instruccion.cs" />
     <Compile Include="Assets\Script\irInsDos.cs" />
     <Compile Include="Assets\Script\irInstruccion.cs" />
     <Compile Include="Assets\Script\irLobby.cs" />
     <Compile Include="Assets\Script\irNivelDos.cs" />
-    <Compile Include="Assets\Script\irNivelDosperder.cs" />
     <Compile Include="Assets\Script\irNiveluno.cs" />
     <Compile Include="Assets\Script\irNivelUnoPerder.cs" />
     <Compile Include="Assets\Script\jugardos.cs" />

@@ -7,6 +7,9 @@ public class cartaTres : MonoBehaviour
 
 {
     [SerializeField]
+    private SceneControl3 controller;
+
+    [SerializeField]
     private GameObject CartaTres;
 
     public void OnMouseDown()
@@ -14,6 +17,7 @@ public class cartaTres : MonoBehaviour
         if (CartaTres.activeSelf)
         {
             CartaTres.SetActive(false);
+            controller.CardRevealed(this);
         }
     }
 
@@ -29,5 +33,10 @@ public class cartaTres : MonoBehaviour
         _id = id;
         GetComponent<SpriteRenderer>().sprite = image;
 
+    }
+
+    public void Unreveal() //funcion voltear
+    {
+        CartaTres.SetActive(true);
     }
 }

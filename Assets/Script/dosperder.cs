@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class irNivelDosperder : MonoBehaviour
+public class dosperder : MonoBehaviour
 {
     [System.Obsolete]
     void OnMouseDown()

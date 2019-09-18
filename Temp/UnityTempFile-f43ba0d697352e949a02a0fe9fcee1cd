@@ -298,12 +298,12 @@
 Assets\Script\carta.cs
 Assets\Script\cartaDos.cs
 Assets\Script\cartaTres.cs
+Assets\Script\dosperder.cs
 Assets\Script\instruccion.cs
 Assets\Script\irInsDos.cs
 Assets\Script\irInstruccion.cs
 Assets\Script\irLobby.cs
 Assets\Script\irNivelDos.cs
-Assets\Script\irNivelDosperder.cs
 Assets\Script\irNiveluno.cs
 Assets\Script\irNivelUnoPerder.cs
 Assets\Script\jugardos.cs

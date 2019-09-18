@@ -117,8 +117,8 @@ public class Scenecontrol : MonoBehaviour
 
             if (_firstReveaLed = card)
             {
-                sonido.clip = carta;
-                sonido.Play();
+           //     sonido.clip = carta;
+           //     sonido.Play();
 
             };          
 

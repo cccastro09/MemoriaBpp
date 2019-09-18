@@ -27,7 +27,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Cantidad<200)
+        if(Cantidad<300)
         {
             Cantidad += Velocidad * Time.deltaTime;
             TextIndicador.GetComponent<Text>().text = ((int)Cantidad).ToString() + "";
@@ -40,6 +40,6 @@ public class timer : MonoBehaviour
 
         }
 
-        Carga.GetComponent<Image>().fillAmount = Cantidad / 200;
+        Carga.GetComponent<Image>().fillAmount = Cantidad / 300;
     }
 }
